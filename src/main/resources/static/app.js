@@ -10,4 +10,15 @@ angular.module('todoApp', []).controller(
 			}
 
 			$scope.load();
+
+			$scope.form = {}
+
+			$scope.addTodo = function() {
+				$http.post(
+						'api/todo/add?descrizione=' + $scope.form.descrizione)
+						.success(function() {
+							$scope.form.descrizione = ''
+							$scope.load();
+						})
+			}
 		});

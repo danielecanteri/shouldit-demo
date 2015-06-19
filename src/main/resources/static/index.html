@@ -7,6 +7,10 @@
 <body ng-app="todoApp">
 	<h2>Todo list</h2>
 	<div ng-controller="TodoController">
+		<form ng-submit="addTodo()">
+			<input type="text" ng-model="form.descrizione">
+			<button type="submit">Add</button>
+		</form>
 		<div ng-if="loading">Loading application</div>
 		<div ng-if="!loading">
 			<div ng-if="todos.length == 0">Nessun todo</div>
