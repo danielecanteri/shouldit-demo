@@ -21,4 +21,10 @@ angular.module('todoApp', []).controller(
 							$scope.load();
 						})
 			}
+
+			$scope.removeTodo = function(id) {
+				$http.post('api/todo/remove?id=' + id).success(function() {
+					$scope.load();
+				})
+			}
 		});

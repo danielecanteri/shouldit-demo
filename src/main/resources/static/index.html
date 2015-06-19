@@ -18,6 +18,7 @@
 				<table>
 					<tr ng-repeat="todo in todos">
 						<td>{{todo.descrizione}}</td>
+						<td><button ng-click="removeTodo(todo.id)">X</button></td>
 					</tr>
 				</table>
 			</div>
