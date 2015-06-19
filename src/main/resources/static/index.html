@@ -5,8 +5,18 @@
 <script src="/app.js"></script>
 </head>
 <body ng-app="todoApp">
+	<h2>Todo list</h2>
 	<div ng-controller="TodoController">
-		<h2>Hello from {{what}}!</h2>
-	</div>
+		<div ng-if="loading">Loading application</div>
+		<div ng-if="!loading">
+			<div ng-if="todos.length == 0">Nessun todo</div>
+			<div ng-if="todos.length != 0">
+				<table>
+					<tr ng-repeat="todo in todos">
+						<td>{{todo.descrizione}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 </body>
 </html>
