@@ -1,8 +1,8 @@
-describe('Karma', function () {
+describe('Home Page', function () {
 	
 	beforeEach(module('todoApp'));
 
-	it("loading", inject(function ($rootScope, $controller, $httpBackend) {
+	it("all'inizio deve essere visualizzato un messaggio di loading", inject(function ($rootScope, $controller, $httpBackend) {
 		var scope = $rootScope.$new()
 		var todoController = $controller('TodoController', {
 			$scope : scope

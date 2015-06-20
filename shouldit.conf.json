@@ -1,4 +1,4 @@
 {
 	"specs": "src/specs/*.md",
-	"results": "target/surefire-reports/*.xml"
+	"results": "karma-results.json,target/surefire-reports/*.xml"
 }

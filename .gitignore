@@ -47,3 +47,4 @@ Temporary Items
 .settings
 node_modules
 junit-output.xml
+karma-results.json
