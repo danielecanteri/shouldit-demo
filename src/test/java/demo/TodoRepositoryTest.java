@@ -18,7 +18,7 @@ public class TodoRepositoryTest {
 	private TodoRepository todoRepository;
 
 	@Test(expected = ValidationException.class)
-	public void descrizioneNotNull() {
+	public void laDescrizioneDeveEssereDiversaDaNull() {
 		Todo todo = new Todo();
 		todoRepository.save(todo);
 	}

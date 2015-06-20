@@ -1,4 +1,8 @@
-# Home
+# Todo application
 
-+ IT deve fare qualcosa
-+ IT deve fare qualcosa d'altro
+L'applicazione deve...
+
+
+# Todo Repository
+
++ IT la descrizione deve essere diversa da null
