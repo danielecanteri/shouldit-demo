@@ -1,6 +1,6 @@
-describe('Test', function () {
+describe('Home Page', function () {
 
-	it('loading', function () {
+	it('deve essere possibile aggiungere un todo', function () {
 		browser.get('http://localhost:8080');
 
 		var rows = element.all(by.repeater('todo in todos'));
